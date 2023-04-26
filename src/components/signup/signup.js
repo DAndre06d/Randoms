@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../../App.css";
 
 const SignUpForm = () => {
   const [email, setEmail] = useState("");
@@ -43,24 +44,31 @@ const SignUpForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        Email:
-        <input type="email" value={email} onChange={handleEmailChange} />
-      </label>
-      <label>
-        Password:
-        <input
-          type="password"
-          value={password}
-          onChange={handlePasswordChange}
-        />
-        {errorMsg && <p style={{ color: "red" }}>{errorMsg}</p>}
-      </label>
-      <button type="submit" disabled={!isValid}>
-        Sign Up
-      </button>
-    </form>
+    <div className="body-form">
+      <div className="signup-form">
+        <div className="title">Sign Up</div>
+        <form onSubmit={handleSubmit}>
+          <label>
+            Email:
+            <input type="email" value={email} onChange={handleEmailChange} />
+          </label>{" "}
+          <br /> <br />
+          <label>
+            Password:
+            <input
+              type="password"
+              value={password}
+              onChange={handlePasswordChange}
+            />
+            {errorMsg && <p style={{ color: "red" }}>{errorMsg}</p>}
+          </label>
+          <br /> <br />
+          <button className="btn-submit" type="submit" disabled={!isValid}>
+            Sign Up
+          </button>
+        </form>
+      </div>
+    </div>
   );
 };
 

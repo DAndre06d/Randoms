@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Premis", sans-serif;
+  margin-left: 0;
+  height: 100%;
+  width: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/******************             APP STYLE            *********************/
+.app-form{
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+/******************             NAVBAR STYLE            *********************/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-brand a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navbar-menu {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  margin: 0 1rem;
+}
+
+.navbar-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 1rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbar-menu li {
+    margin: 1rem 0;
   }
+
+  .menu-icon {
+    display: block;
+  }
+
+  #menu-toggle:checked + .navbar-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/******************             SIGN UP STYLE            *********************/
+.body-form{
+  display: grid;
+  place-items: center;
+  margin-top: 20px;
+}
+.signup-form{
+  padding: 10px;
+  background-color: aqua;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.title{
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+}
+
+.btn-submit{
+
 }
