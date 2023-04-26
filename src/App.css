@@ -1,8 +1,7 @@
 body {
   font-family: "Premis", sans-serif;
   margin-left: 0;
-  height: 100%;
-  width: 100%;
+  margin-top: 0;
 }
 /******************             APP STYLE            *********************/
 .app-form{
