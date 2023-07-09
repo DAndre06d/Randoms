@@ -1,8 +1,4 @@
-#root {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
+
 html, body {
   width: 100%;
   height: 100%;
@@ -20,7 +16,7 @@ html, body {
 }
 .container{
   display: block;
-  justify-content:
+
 }
 /******************             NAVBAR STYLE            *********************/
 nav {
@@ -30,8 +26,7 @@ nav {
   background-color: #333;
   color: #fff;
   padding: 1rem;
-  top: 0;
-  width: 100%;
+  
 }
 
 .navbar-brand a {
@@ -94,7 +89,6 @@ nav {
 .signup-form{
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .signup-container{
   background-color: aqua;
