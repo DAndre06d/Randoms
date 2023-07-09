@@ -19,8 +19,8 @@ html, body {
   align-items: center;
 }
 .container{
-  width: 100%;
-  height: 100%;
+  display: block;
+  justify-content:
 }
 /******************             NAVBAR STYLE            *********************/
 nav {
@@ -31,9 +31,7 @@ nav {
   color: #fff;
   padding: 1rem;
   top: 0;
-  position: fixed;
   width: 100%;
-  
 }
 
 .navbar-brand a {
@@ -72,7 +70,6 @@ nav {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 100%;
     background-color: #333;
     padding: 1rem;
   }
@@ -100,7 +97,6 @@ nav {
   align-items: center;
 }
 .signup-container{
-  padding: 10px;
   background-color: aqua;
   border-radius: 5px;
   padding: 50px;
