@@ -11,7 +11,7 @@ function App() {
         <div className="nav-bar">
           <Navbar />
         </div>
-        <div>
+        <div className="sign">
           <SignUpForm />
         </div>
         <div>
